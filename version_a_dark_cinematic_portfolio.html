@@ -1,0 +1,66 @@
+<div style="width:100%;border:1px solid #2a2a33;border-radius:12px;overflow:hidden">
+<iframe style="width:100%;height:640px;border:0;display:block" srcdoc="&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;UTF-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;style&gt;
+:root{--bg:#0A0A0F;--bg2:#101018;--surface:#15151F;--border:#26262F;--text:#F0EEE9;--muted:#918E86;--gold:#E0A75E;--gold-soft:#C9954E;--ice:#AFc4d9}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:'Sora',sans-serif;margin:0}a{color:inherit;text-decoration:none}
+.glow{position:fixed;inset:0;z-index:-1;background:radial-gradient(700px circle at 78% 22%,rgba(224,167,94,0.16),transparent 55%),radial-gradient(600px circle at 20% 80%,rgba(175,196,217,0.07),transparent 55%);pointer-events:none}
+.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(10,10,15,0.7);border-bottom:1px solid var(--border)}
+.navin{max-width:1000px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'JetBrains Mono',monospace;font-size:17px}.logo .d{color:var(--gold)}
+.nl{display:flex;gap:28px;font-size:14px}.nl a{color:var(--muted);transition:.2s}.nl a:hover{color:var(--gold)}
+.hero{max-width:1000px;margin:0 auto;padding:90px 24px 70px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.eyebrow{font-family:'JetBrains Mono',monospace;color:var(--gold);font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+.hero h1{font-size:clamp(38px,6vw,60px);font-weight:700;line-height:1.04;letter-spacing:-.02em}
+.hero h1 .g{background:linear-gradient(100deg,var(--gold),#F5D9A8);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.sub{color:var(--muted);font-size:17px;margin:20px 0 32px;max-width:440px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:12px 26px;border-radius:10px;font-weight:500;font-size:14px;font-family:'Inter'}
+.b1{background:var(--gold);color:#231703}.b2{border:1px solid var(--border);color:var(--text)}
+.term{background:linear-gradient(160deg,#16161F,#101017);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5),0 0 40px rgba(224,167,94,.04)}
+.tbar{display:flex;align-items:center;gap:7px;padding:11px 14px;background:#0D0D14;border-bottom:1px solid var(--border)}
+.dot{width:11px;height:11px;border-radius:50%}.dr{background:#E0A75E}.dy{background:#C9954E}.dg{background:#6B6B58}
+.ttitle{margin-left:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted)}
+.tbody{font-family:'JetBrains Mono',monospace;font-size:13px;padding:20px;min-height:150px;color:var(--gold);white-space:pre-wrap}
+.tm{color:var(--muted)}.ti{color:var(--ice)}
+.cur{display:inline-block;width:8px;height:15px;background:var(--gold);vertical-align:middle;animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}
+.sec{max-width:1000px;margin:0 auto;padding:70px 24px}.sec.alt{background:var(--bg2);max-width:none}.sec.alt&gt;div{max-width:1000px;margin:0 auto}
+.lbl{font-family:'JetBrains Mono',monospace;color:var(--gold-soft);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.sec h2{font-size:clamp(24px,3.5vw,32px);margin-bottom:32px}
+.tags{display:flex;flex-wrap:wrap;gap:12px}
+.tag{font-family:'JetBrains Mono',monospace;font-size:13px;padding:9px 16px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--ice)}
+.tag.g{color:var(--gold);border-color:rgba(224,167,94,.3)}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.pc{background:linear-gradient(155deg,#16161F,#111119);border:1px solid var(--border);border-radius:14px;padding:26px;transition:.25s}
+.pc:hover{border-color:rgba(224,167,94,.4);transform:translateY(-4px)}
+.badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.06em;padding:4px 10px;border-radius:999px;margin-bottom:12px;color:var(--gold);background:rgba(224,167,94,.12)}
+.pc h3{font-size:19px;margin-bottom:9px}.pc p{color:var(--muted);font-size:14px;margin-bottom:14px}
+.stk{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--gold-soft)}
+.cg{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+.cc{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:5px;transition:.2s}
+.cc:hover{border-color:rgba(224,167,94,.4);transform:translateY(-3px)}
+.ck{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.cn{font-family:'Sora';font-size:20px;font-weight:600}.cs{color:var(--muted);font-size:13px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.pg{grid-template-columns:1fr}.cg{grid-template-columns:1fr}.nl{display:none}}
+&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
+&lt;div class=&quot;glow&quot;&gt;&lt;/div&gt;
+&lt;header class=&quot;nav&quot;&gt;&lt;div class=&quot;navin&quot;&gt;&lt;div class=&quot;logo&quot;&gt;twinkle&lt;span class=&quot;d&quot;&gt;.&lt;/span&gt;dev&lt;/div&gt;&lt;nav class=&quot;nl&quot;&gt;&lt;a&gt;About&lt;/a&gt;&lt;a&gt;Skills&lt;/a&gt;&lt;a&gt;Projects&lt;/a&gt;&lt;a&gt;Journey&lt;/a&gt;&lt;a&gt;Connect&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;&lt;/header&gt;
+&lt;section class=&quot;hero&quot;&gt;&lt;div&gt;&lt;p class=&quot;eyebrow&quot;&gt;Edge AI · Embedded Systems&lt;/p&gt;&lt;h1&gt;Hi, I'm &lt;span class=&quot;g&quot;&gt;Twinkle Vaishnav&lt;/span&gt;&lt;/h1&gt;&lt;p class=&quot;sub&quot;&gt;Building AI that runs on the device itself — not the cloud. Self-taught, documented in public, one terminal error at a time.&lt;/p&gt;&lt;div class=&quot;btns&quot;&gt;&lt;span class=&quot;btn b1&quot;&gt;See projects&lt;/span&gt;&lt;span class=&quot;btn b2&quot;&gt;Connect&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;term&quot;&gt;&lt;div class=&quot;tbar&quot;&gt;&lt;span class=&quot;dot dr&quot;&gt;&lt;/span&gt;&lt;span class=&quot;dot dy&quot;&gt;&lt;/span&gt;&lt;span class=&quot;dot dg&quot;&gt;&lt;/span&gt;&lt;span class=&quot;ttitle&quot;&gt;twinkle@jetson: ~&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;tbody&quot; id=&quot;tb&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;section class=&quot;sec alt&quot;&gt;&lt;div&gt;&lt;p class=&quot;lbl&quot;&gt;02 — Skills&lt;/p&gt;&lt;h2&gt;What I work with&lt;/h2&gt;&lt;div class=&quot;tags&quot;&gt;&lt;span class=&quot;tag g&quot;&gt;Python&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;Linux&lt;/span&gt;&lt;span class=&quot;tag g&quot;&gt;Edge AI&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;LLMs&lt;/span&gt;&lt;span class=&quot;tag g&quot;&gt;CUDA&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;FastAPI&lt;/span&gt;&lt;span class=&quot;tag g&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;Embedded&lt;/span&gt;&lt;span class=&quot;tag g&quot;&gt;llama.cpp&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;MongoDB&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;section class=&quot;sec&quot;&gt;&lt;p class=&quot;lbl&quot;&gt;03 — Projects&lt;/p&gt;&lt;h2&gt;Things I've built&lt;/h2&gt;&lt;div class=&quot;pg&quot;&gt;
+&lt;div class=&quot;pc&quot;&gt;&lt;span class=&quot;badge&quot;&gt;In progress&lt;/span&gt;&lt;h3&gt;Full-stack LLM chat app&lt;/h3&gt;&lt;p&gt;Llama 3.2 3B running on-device with llama.cpp, FastAPI, MongoDB, and a React frontend via Cloudflare Tunnel.&lt;/p&gt;&lt;div class=&quot;stk&quot;&gt;llama.cpp · FastAPI · MongoDB · React&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;pc&quot;&gt;&lt;span class=&quot;badge&quot;&gt;Completed&lt;/span&gt;&lt;h3&gt;Jetson flashing &amp;amp; recovery&lt;/h3&gt;&lt;p&gt;Full CLI flashing workflow with a board-specific device fix, plus recovery from a broken GPU driver state.&lt;/p&gt;&lt;div class=&quot;stk&quot;&gt;L4T · JetPack · Bash · Linux&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;pc&quot;&gt;&lt;span class=&quot;badge&quot;&gt;Completed&lt;/span&gt;&lt;h3&gt;Stable Diffusion on the edge&lt;/h3&gt;&lt;p&gt;Ran Stable Diffusion Turbo on the Jetson, generating images in ~3.7s after fixing a GPU driver bug.&lt;/p&gt;&lt;div class=&quot;stk&quot;&gt;Stable Diffusion · CUDA · Python&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;pc&quot;&gt;&lt;span class=&quot;badge&quot;&gt;Planned&lt;/span&gt;&lt;h3&gt;On-device voice assistant&lt;/h3&gt;&lt;p&gt;A fully offline voice assistant running speech-to-text and an LLM locally on the Jetson.&lt;/p&gt;&lt;div class=&quot;stk&quot;&gt;Whisper · llama.cpp · Python&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;section class=&quot;sec alt&quot;&gt;&lt;div&gt;&lt;p class=&quot;lbl&quot;&gt;05 — Connect&lt;/p&gt;&lt;h2&gt;Find me here&lt;/h2&gt;&lt;div class=&quot;cg&quot;&gt;&lt;div class=&quot;cc&quot;&gt;&lt;span class=&quot;ck&quot;&gt;Code&lt;/span&gt;&lt;span class=&quot;cn&quot;&gt;GitHub&lt;/span&gt;&lt;span class=&quot;cs&quot;&gt;@twinklevaishnav&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cc&quot;&gt;&lt;span class=&quot;ck&quot;&gt;Watch&lt;/span&gt;&lt;span class=&quot;cn&quot;&gt;YouTube&lt;/span&gt;&lt;span class=&quot;cs&quot;&gt;Debug &amp;amp; Build&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;cc&quot;&gt;&lt;span class=&quot;ck&quot;&gt;Connect&lt;/span&gt;&lt;span class=&quot;cn&quot;&gt;LinkedIn&lt;/span&gt;&lt;span class=&quot;cs&quot;&gt;Twinkle Vaishnav&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;script&gt;
+var tb=document.getElementById('tb');var L=[{t:'$ whoami',c:''},{t:'twinkle_vaishnav',c:'tm'},{t:'$ cat skills.txt',c:''},{t:'python · linux · edge_ai · llms',c:'ti'},{t:'$ ./status.sh',c:''},{t:'[ok] self-taught, building in public',c:'tm'}];
+function tl(i){if(i&gt;=L.length){var c=document.createElement('span');c.className='cur';tb.appendChild(c);return}var o=L[i],e=document.createElement('div');if(o.c)e.className=o.c;tb.appendChild(e);var j=0,s=o.t.charAt(0)==='$'?42:16;(function tc(){if(j&lt;=o.t.length){e.textContent=o.t.slice(0,j);j++;setTimeout(tc,s)}else setTimeout(function(){tl(i+1)},200)})()}tl(0);
+&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;"></iframe>
+</div>
