@@ -23,7 +23,6 @@
   --orb-glow: rgba(224, 167, 94, 0.22);
   --grain-opacity: 0.035;
 
-  --font-hero-name: 'Space Grotesk', sans-serif;
   --font-display: 'Sora', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -326,10 +325,10 @@ a:focus-visible, button:focus-visible {
 .hero-greeting {
   position: relative;
   z-index: 2;
-  font-family: var(--font-hero-name);
-  font-size: clamp(38px, 6vw, 64px);
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5.5vw, 60px);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.15;
   letter-spacing: -0.02em;
   color: var(--text);
   margin: 0;
@@ -341,33 +340,18 @@ a:focus-visible, button:focus-visible {
   -webkit-text-fill-color: transparent;
 }
 
-.hero-focus {
-  position: relative;
-  z-index: 2;
-  margin: 18px 0 20px;
-  font-family: var(--font-body);
-  font-size: clamp(14px, 1.2vw, 16px);
-  font-weight: 500;
-  line-height: 1.4;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #E9C98B;
-  white-space: nowrap;
-  max-width: 100%;
-}
-
 .hero-sub {
   position: relative;
   z-index: 2;
   font-family: var(--font-body);
   font-weight: 400;
   font-size: clamp(16px, 1.9vw, 19px);
-  line-height: 1.7;
-  letter-spacing: 0.01em;
+  line-height: 1.65;
+  letter-spacing: 0.005em;
   color: #D8D5CE;
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
   max-width: 42ch;
-  margin: 0 0 40px;
+  margin: 26px 0 40px;
 }
 
 .hero-terminal { position: relative; z-index: 2; }
@@ -435,7 +419,7 @@ a:focus-visible, button:focus-visible {
 
 /* Split hero into text + floating terminal on wider screens */
 @media (min-width: 900px) {
-  .hero-content { grid-template-columns: 1.15fr 0.85fr; align-items: start; }
+  .hero-content { grid-template-columns: 1.15fr 0.85fr; align-items: center; }
 }
 
 /* ===== Sections =====
@@ -582,12 +566,6 @@ a:focus-visible, button:focus-visible {
   .nav-links a { padding: 16px 24px; border-bottom: 1px solid var(--border); }
   .hero { padding: 56px 20px 48px; min-height: auto; }
   .section { padding: 60px 20px; }
-  .hero-focus {
-    font-size: 13px;
-    letter-spacing: 0.16em;
-    white-space: normal;
-    margin: 14px 0 16px;
-  }
   .hero-sub { font-size: 16px; }
   .terminal-body { font-size: 12px; padding: 16px; }
 }
