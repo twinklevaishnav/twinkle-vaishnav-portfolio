@@ -23,6 +23,7 @@
   --orb-glow: rgba(224, 167, 94, 0.22);
   --grain-opacity: 0.035;
 
+  --font-hero-name: 'Space Grotesk', sans-serif;
   --font-display: 'Sora', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -325,10 +326,10 @@ a:focus-visible, button:focus-visible {
 .hero-greeting {
   position: relative;
   z-index: 2;
-  font-family: var(--font-display);
-  font-size: clamp(32px, 5.5vw, 60px);
+  font-family: var(--font-hero-name);
+  font-size: clamp(38px, 6vw, 64px);
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.05;
   letter-spacing: -0.02em;
   color: var(--text);
   margin: 0;
@@ -343,14 +344,14 @@ a:focus-visible, button:focus-visible {
 .hero-focus {
   position: relative;
   z-index: 2;
-  margin: 16px 0 18px;
-  font-family: var(--font-display);
-  font-size: clamp(13px, 1.15vw, 16px);
-  font-weight: 600;
+  margin: 18px 0 20px;
+  font-family: var(--font-body);
+  font-size: clamp(14px, 1.2vw, 16px);
+  font-weight: 500;
   line-height: 1.4;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #E7C78E;
+  color: #E9C98B;
   white-space: nowrap;
   max-width: 100%;
 }
@@ -361,8 +362,8 @@ a:focus-visible, button:focus-visible {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: clamp(16px, 1.9vw, 19px);
-  line-height: 1.65;
-  letter-spacing: 0.005em;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
   color: #D8D5CE;
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
   max-width: 42ch;
@@ -434,7 +435,7 @@ a:focus-visible, button:focus-visible {
 
 /* Split hero into text + floating terminal on wider screens */
 @media (min-width: 900px) {
-  .hero-content { grid-template-columns: 1.15fr 0.85fr; align-items: center; }
+  .hero-content { grid-template-columns: 1.15fr 0.85fr; align-items: start; }
 }
 
 /* ===== Sections =====
